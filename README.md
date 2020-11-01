@@ -1,9 +1,12 @@
 # ServerAllocator
-You can use postman to test this application.
+You can use postman to test this application. Just import the collection and make sure you run the application.
+
 # sample Request
+```yaml
 {"hours":33,"cpu":100}
-#sample Response
-[
+```
+# sample Response
+```yaml[
     {
         "region": "us-West",
         "total_cost": 399.76,
@@ -33,3 +36,4 @@ You can use postman to test this application.
         }
     }
 ]
+```
