@@ -6,7 +6,9 @@ You can use postman to test this application. Just import the collection and mak
 {"hours":33,"cpu":100}
 ```
 # sample Response
-```yaml[
+```yaml
+{ 
+[
     {
         "region": "us-West",
         "total_cost": 399.76,
@@ -36,4 +38,5 @@ You can use postman to test this application. Just import the collection and mak
         }
     }
 ]
+}
 ```
