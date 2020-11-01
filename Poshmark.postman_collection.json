@@ -1,0 +1,82 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Poshmark",
+		"_postman_id": "69a192af-5418-6472-0311-d6004d1e0725",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Without CPU",
+			"request": {
+				"url": "http://localhost:8999/getcosts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"hours\":33,\"cost\":400}"
+				},
+				"description": "Generated from a curl request: \ncurl --request POST \\\n  --url 'https://siemens-qa-00052.eu.auth0.com/oauth/token' \\\n  --header 'content-type: application/x-www-form-urlencoded' \\\n  --data grant_type=password \\\n  --data username=user@example.com \\\n  --data password=pwd \\\n  --data audience=YOUR_API_IDENTIFIER \\\n  --data scope=read:sample \\\n  --data 'client_id=y0UoEpKXVksZrb94r0OSk0zRt24T5Qxf' \\\n  --data client_secret=YOUR_CLIENT_SECRET"
+			},
+			"response": []
+		},
+		{
+			"name": "With All fields",
+			"request": {
+				"url": "http://localhost:8999/getcosts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"hours\":33,\"cpu\":100,\"cost\":400}"
+				},
+				"description": "Generated from a curl request: \ncurl --request POST \\\n  --url 'https://siemens-qa-00052.eu.auth0.com/oauth/token' \\\n  --header 'content-type: application/x-www-form-urlencoded' \\\n  --data grant_type=password \\\n  --data username=user@example.com \\\n  --data password=pwd \\\n  --data audience=YOUR_API_IDENTIFIER \\\n  --data scope=read:sample \\\n  --data 'client_id=y0UoEpKXVksZrb94r0OSk0zRt24T5Qxf' \\\n  --data client_secret=YOUR_CLIENT_SECRET"
+			},
+			"response": []
+		},
+		{
+			"name": "Without Cost",
+			"request": {
+				"url": "http://localhost:8999/getcosts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"hours\":33,\"cpu\":100}"
+				},
+				"description": "Generated from a curl request: \ncurl --request POST \\\n  --url 'https://siemens-qa-00052.eu.auth0.com/oauth/token' \\\n  --header 'content-type: application/x-www-form-urlencoded' \\\n  --data grant_type=password \\\n  --data username=user@example.com \\\n  --data password=pwd \\\n  --data audience=YOUR_API_IDENTIFIER \\\n  --data scope=read:sample \\\n  --data 'client_id=y0UoEpKXVksZrb94r0OSk0zRt24T5Qxf' \\\n  --data client_secret=YOUR_CLIENT_SECRET"
+			},
+			"response": []
+		},
+		{
+			"name": "Serverdetails",
+			"request": {
+				"url": "http://localhost:8999/getServerDetails",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
